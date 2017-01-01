@@ -1,4 +1,5 @@
-pam_mariadb - A PAM module for authentication with user information from a MariaDB database
+## pam_mariadb
+A PAM module for authentication with user information from a MariaDB database
 
 The following packages are required to build pam_mariadb:
 ```
@@ -14,13 +15,13 @@ mariadb-devel, pam-devel, openssl-devel
 * dbpassword - Password for the database connection
 * dbname - Name of the database in which the user information is located (Default: userdb)
 * pwdalgo - Password hash algorithm (Default: sha512)
-⋅⋅* sha512
-⋅⋅* sha256
-⋅⋅* sha1
-⋅⋅* md5
+  * sha512
+  * sha256
+  * sha1
+  * md5
 * pwdstyle - Style in which the hash is stored (Default: hex)
-⋅⋅* hex - Hex-encoded value of the hash
-⋅⋅* curlyb64 - Hash-algorithm inside curly braces and b64-encoded hash (Suitable for use with proftpd/mod_mysql)
+  * hex - Hex-encoded value of the hash
+  * curlyb64 - Hash-algorithm inside curly braces and b64-encoded hash (Suitable for use with proftpd/mod_mysql)
 * useridcolumn - Column where the username is stored (Default: userid)
 * pwdcolumn - Column where the password hash is stored (Default: passwd)
 * usertable - Name of the table where the user data is stored (Default: users)
